@@ -3,7 +3,7 @@ import os
 import sys
 
 # Django settings for ProjectName project.
-
+import ./database.py
 DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
@@ -38,19 +38,7 @@ ADMINS = (
 
 MANAGERS = ADMINS
 
-DATABASES = {
-    'default': {
-        # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        #'ENGINE': 'django.db.backends.{{ db_engine }}',
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'prod_database_name',
-        # The rest is not used with sqlite3:
-        'USER': 'prod_user',
-        'PASSWORD': 'prod_p@ssword',
-        'HOST': 'localhost',
-        'PORT': '',
-    }
-}
+
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
