@@ -3,7 +3,7 @@ import os
 import sys
 
 # Django settings for ProjectName project.
-import ./database.py
+import database.py
 DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
