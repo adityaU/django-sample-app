@@ -37,6 +37,7 @@ ADMINS = (
 )
 
 MANAGERS = ADMINS
+ALLOWED_HOSTS= ['*']
 
 
 
