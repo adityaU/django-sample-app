@@ -73,7 +73,7 @@ STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
     #'django.contrib.staticfiles.finders.DefaultStorageFinder',
 )
-DATABASES = json.load(open('database.json'))
+DATABASES = json.load(open('/'.join(__file__.split('/')[0:-1]) + '/database.json'))
 # Make this unique, and don't share it with anybody.
 # http://www.miniwebtool.com/django-secret-key-generator/
 SECRET_KEY = '!!! paste your own secret key here !!!'
