@@ -1,9 +1,8 @@
 #! /usr/bin/env python2.7
 import os
 import sys
-
+import json
 # Django settings for ProjectName project.
-import database
 DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
@@ -74,7 +73,7 @@ STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
     #'django.contrib.staticfiles.finders.DefaultStorageFinder',
 )
-
+DATABASES = json.load(open('database.json'))
 # Make this unique, and don't share it with anybody.
 # http://www.miniwebtool.com/django-secret-key-generator/
 SECRET_KEY = '!!! paste your own secret key here !!!'
